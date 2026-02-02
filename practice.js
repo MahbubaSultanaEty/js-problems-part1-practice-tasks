@@ -63,3 +63,28 @@ function vowels(sentence) {
 let sent = "The quick brown fox jumps over the lazy dog";
 console.log(vowels(sent));
 
+// Task-4:
+// Write a function to find the longest word in a given string.
+
+// sample-input: I am learning Programming to become a programmer
+
+// sample-output: Programming
+
+function longest(str) {
+    let arr = str.split(" ");
+    let longest = "";
+    for (let word of arr) {
+        if (word.length > longest.length) {
+            longest = word;
+        }
+    } console.log(longest)
+}
+
+let sentence = "The Java in JavaScript is a marketing ploy";
+longest(sentence);
+
+// Task-5:
+// Generate a random number between 10 to 20.
+
+let randomNum = Math.floor(Math.random() * 11) + 10;
+console.log(randomNum);
